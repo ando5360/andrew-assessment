@@ -4,7 +4,7 @@ My name is Andy and Im from Doncaster, UK. At 24 years old I see myself as a you
 Please bear in mind I have time constraints as Im working full time ate the minute, this was done on the weekend to the best of my ability. However it is not as shiny as I would like 
 
 I hope you enjoy :blush: . My solution is as follows ...
-# All documentation is in the wiki tab
+# All documentation is in the wiki tab [here](https://github.com/ando5360/andrew-assessment/wiki)
 ## Design solution
 ####     JakartaEE application encorparating secure proxy via eclipse microprofile with Boundary-Control-Entity design pattern
 ####     Kubernetes container orchestration
