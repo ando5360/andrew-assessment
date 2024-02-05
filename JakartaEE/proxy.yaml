@@ -1,0 +1,64 @@
+openapi: 3.0.0
+info:
+  title: Cloud Provider Keep-Alive Proxy Service
+  description: A proxy service to standardize keep-alive requests across different cloud platforms.
+  version: 1.0.0
+servers:
+  - url: /proxy
+paths:
+  /keepalive:
+    post:
+      summary: Send keep-alive signal to a specific cloud provider.
+      operationId: sendKeepAlive
+      tags:
+        - Keep-Alive
+      requestBody:
+        description: Keep-alive request parameters.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                provider:
+                  type: string
+                  description: Cloud service provider identifier.
+                endpoint:
+                  type: string
+                  description: Provider-specific endpoint to send the keep-alive request to.
+                interval:
+                  type: integer
+                  description: Interval in seconds to send keep-alive requests.
+              required:
+                - provider
+                - endpoint
+                - interval
+      responses:
+        '200':
+          description: Successfully sent keep-alive request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Keep-alive request sent successfully.
+        '400':
+          description: Bad request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: Invalid request parameters.
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY
+security:
+  - ApiKeyAuth: []
