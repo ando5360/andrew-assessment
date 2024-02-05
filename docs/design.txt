@@ -1,1 +1,0 @@
-Boundary-Control-Entity design pattern
