@@ -4,7 +4,7 @@ My name is Andy and Im from Doncaster, UK. At 24 years old I see myself as a you
 
 I hope you enjoy :blush: .
 
-# My solution is as follows:
+#### My solution is as follows ...
 
 ## Design solution
 ####     JakartaEE application encorparating secure proxy via eclipse microprofile with Boundary-Control-Entity design pattern
