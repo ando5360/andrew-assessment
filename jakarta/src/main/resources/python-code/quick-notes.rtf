@@ -114,7 +114,9 @@ Optimized Container Images: For platforms supporting containerized deployments (
 and optimized application binaries to improve performance and reduce startup times.
 https://hadoop.apache.org/
 
-Decouple Compute and Storage: Design your serverless application to treat compute and storage as separate concerns, with serverless functions interacting with external storage services via APIs.
+Decouple Compute and Storage: 
+Design your serverless application to treat compute and storage as separate concerns, with serverless functions interacting with external storage services via APIs.
+
 Scalability and Performance: Choose storage solutions that match your application's scalability and performance requirements. Consider the latency, throughput, and scalability of the storage service.
 Security: Implement appropriate security measures, such as encryption at rest and in transit, IAM roles, and access policies, to protect your persistent storage.
 Cost Optimization: Monitor and optimize storage costs by selecting the appropriate storage class, implementing data lifecycle policies, and regularly reviewing your storage utilization.
@@ -124,7 +126,8 @@ Data Collection Method: Prometheus collects data through a pull model, scraping 
 Elasticsearch, in the context of the Elastic Stack, often relies on push models, where data is sent to Elasticsearch using Beats or Logstash.
 
 could be a better solution to push instead of pull ephermal storage of serverless when future configs unkown improves modularity
-network storage 
+network storage
+
 beats
 Centralized Management: Data is centralized, simplifying management, backup, and recovery processes.
 Scalability: Easily scale storage capacity up or down depending on needs, especially with cloud storage options.

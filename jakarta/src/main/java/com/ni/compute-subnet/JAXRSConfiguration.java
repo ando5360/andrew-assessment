@@ -4,7 +4,7 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 /**
- * Configures a JAX-RS endpoint. Delete this class, if you are not exposing
+ * configures a proxy endpoint for visulaiser in future relases
  * JAX-RS resources in your application.
  *
  * @author airhacks.com
